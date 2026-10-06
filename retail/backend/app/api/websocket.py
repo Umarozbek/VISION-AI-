@@ -12,6 +12,15 @@ router = APIRouter()
 @router.websocket("/analytics")
 async def analytics_ws(websocket: WebSocket):
     await manager.connect(websocket)
+
+    if redis_client is None:
+        try:
+            while True:
+                await websocket.receive_text()
+        except WebSocketDisconnect:
+            manager.disconnect(websocket)
+        return
+
     pubsub = redis_client.pubsub()
     pubsub.subscribe("analytics:live")
 

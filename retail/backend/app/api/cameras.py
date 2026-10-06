@@ -241,15 +241,22 @@ async def _mjpeg_generator(camera_id: int, fps: int) -> AsyncGenerator[bytes, No
     placeholder = _placeholder_jpeg()
 
     import redis as _rl
-    _r = _rl.from_url(settings.REDIS_URL, decode_responses=False)
+    try:
+        _r = _rl.from_url(settings.REDIS_URL, decode_responses=False)
+        _r.ping()
+    except Exception:
+        _r = None
 
     while True:
         await asyncio.sleep(interval)
 
-        loop = asyncio.get_event_loop()
-        frame_bytes: bytes | None = await loop.run_in_executor(
-            None, _r.get, redis_key
-        )
+        frame_bytes = None
+        if _r:
+            try:
+                loop = asyncio.get_event_loop()
+                frame_bytes = await loop.run_in_executor(None, _r.get, redis_key)
+            except Exception:
+                pass
 
         if not frame_bytes:
             frame_bytes = placeholder
@@ -305,12 +312,16 @@ async def camera_snapshot(
     if not camera:
         raise HTTPException(status_code=404, detail="Camera not found")
 
-    import redis as redis_lib
-    r = redis_lib.from_url(settings.REDIS_URL, decode_responses=False)
-    loop = asyncio.get_event_loop()
-    frame_bytes: bytes | None = await loop.run_in_executor(
-        None, r.get, f"stream:frame:{camera_id}"
-    )
+    frame_bytes = None
+    try:
+        import redis as redis_lib
+        r = redis_lib.from_url(settings.REDIS_URL, decode_responses=False)
+        loop = asyncio.get_event_loop()
+        frame_bytes = await loop.run_in_executor(
+            None, r.get, f"stream:frame:{camera_id}"
+        )
+    except Exception:
+        pass
     if not frame_bytes:
         frame_bytes = _placeholder_jpeg()
     if not frame_bytes:
