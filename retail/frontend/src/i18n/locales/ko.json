@@ -1,0 +1,304 @@
+{
+  "app": {
+    "title": "Retail Analytics",
+    "platformTitle": "리테일 분석 플랫폼",
+    "tagline": "실시간 인물 감지 및 추적 시스템"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "traffic": "유동 인구",
+    "heatmap": "히트맵",
+    "staff": "직원 모니터링",
+    "insights": "AI 분석",
+    "cameras": "카메라",
+    "webCamera": "웹캠",
+    "staffCenter": "직원 센터",
+    "videoAnalysis": "영상 분석"
+  },
+  "topbar": {
+    "live": "실시간",
+    "offline": "오프라인",
+    "logout": "로그아웃",
+    "language": "언어"
+  },
+  "login": {
+    "username": "아이디",
+    "password": "비밀번호",
+    "submit": "로그인",
+    "error": "로그인 실패",
+    "demo": "데모: admin / admin123 또는 operator / operator123"
+  },
+  "cameras": {
+    "title": "카메라 관리",
+    "hint": "📹 아이콘을 클릭하면 실시간 분석 영상을 볼 수 있습니다",
+    "add": "카메라 추가",
+    "empty": "등록된 카메라가 없습니다. \"카메라 추가\" 버튼을 클릭하세요.",
+    "name": "이름",
+    "location": "위치",
+    "ipAddress": "IP 주소",
+    "port": "포트",
+    "brand": "카메라 종류",
+    "login": "아이디",
+    "password": "비밀번호",
+    "streamPath": "스트림 경로",
+    "streamPathHelper": "예: Streaming/Channels/101 (Hikvision)",
+    "entrance": "출입문",
+    "active": "활성화",
+    "inactive": "비활성화",
+    "cancel": "취소",
+    "testConnection": "연결 테스트",
+    "testing": "테스트 중...",
+    "saveAndStart": "저장 및 AI 시작",
+    "table": {
+      "id": "ID",
+      "name": "이름",
+      "ip": "IP",
+      "aiStatus": "AI 상태",
+      "entrance": "출입문"
+    },
+    "yes": "예",
+    "no": "아니오",
+    "close": "닫기",
+    "watchLive": "실시간 보기",
+    "turnOn": "카메라 켜기",
+    "turnOff": "카메라 끄기",
+    "streamLoading": "스트림 로딩 중…",
+    "frameUnavailable": "프레임 없음",
+    "streamOffline": "AI 서비스 또는 카메라가 작동하지 않습니다",
+    "refresh": "새로고침",
+    "fullscreen": "전체 화면"
+  },
+  "webCamera": {
+    "title": "웹캠 관리",
+    "subtitle": "노트북 또는 USB 웹캠으로 실시간 분석을 진행하세요",
+    "add": "웹캠 추가",
+    "addTitle": "새 웹캠 추가",
+    "empty": "등록된 웹캠이 없습니다. \"웹캠 추가\" 버튼을 클릭하세요.",
+    "name": "이름",
+    "namePlaceholder": "노트북 카메라",
+    "location": "위치",
+    "locationPlaceholder": "계산대 앞",
+    "device": "장치",
+    "deviceHint": "보통 노트북 내장 카메라는 0번입니다",
+    "device0": "장치 #0 (기본 / 내장)",
+    "device1": "장치 #1 (외장 USB 카메라)",
+    "device2": "장치 #2",
+    "entrance": "출입문",
+    "active": "활성화",
+    "cancel": "취소",
+    "testConnection": "연결 테스트",
+    "testing": "테스트 중...",
+    "saveAndStart": "저장 및 AI 시작",
+    "monitor": {
+      "title": "실시간 인원 카운터",
+      "subtitle": "AI가 실제로 프레임을 처리하고 있는지 한눈에 확인하세요",
+      "peopleNow": "명 현재 감지됨",
+      "customers": "고객",
+      "staff": "직원",
+      "status": {
+        "processing": "작동 중",
+        "connecting": "연결 중",
+        "error": "오류",
+        "stopped": "중지됨",
+        "idle": "대기 중",
+        "pending": "대기 중"
+      },
+      "lastFrame": "마지막 프레임",
+      "justNow": "방금 전",
+      "secondsAgo": "{{count}}초 전",
+      "noSignal": "신호 없음",
+      "noCameras": "실시간 카운터를 보려면 웹캠을 추가하세요."
+    }
+  },
+  "staffCenter": {
+    "title": "직원 센터",
+    "subtitle": "직원 사진을 업로드하고 근무 위치를 지정하세요 — AI가 얼굴로 인식해 고객과 구분합니다",
+    "add": "직원 추가",
+    "addTitle": "새 직원 추가",
+    "empty": "등록된 직원이 없습니다. \"직원 추가\" 버튼을 클릭하세요.",
+    "name": "이름",
+    "badgeId": "사번",
+    "department": "부서",
+    "workPosition": "근무 위치 (구역)",
+    "workPositionHint": "이 구역에서 이 사람이 인식되면 AI가 근무를 시작한 것으로 표시합니다",
+    "noPosition": "지정 안됨",
+    "photoHint": "저장 후 직원 카드에서 다양한 각도/조명으로 찍은 얼굴 사진 2~5장을 업로드하세요 — 여러 장의 사진은 AI가 닮은 직원이나 이름이 같은 직원도 정확히 구별하는 데 도움이 됩니다.",
+    "save": "저장",
+    "onDuty": "근무 중",
+    "offDuty": "비번",
+    "checkedInAgo": "근무 시작: {{time}}",
+    "secondsAgo": "{{count}}초 전",
+    "minutesAgo": "{{count}}분 전",
+    "hoursAgo": "{{count}}시간 전",
+    "noPhotoWarning": "사진 없음 — 아직 직원으로 인식되지 않습니다",
+    "morePhotosHint": "정확도를 위해 최소 {{count}}장의 사진을 권장합니다",
+    "addPhoto": "사진 추가",
+    "uploadFailed": "사진을 업로드할 수 없습니다",
+    "departments": {
+      "sales": "영업",
+      "security": "보안",
+      "warehouse": "창고",
+      "cashier": "계산원",
+      "management": "관리"
+    }
+  },
+  "dashboard": {
+    "title": "실시간 분석 대시보드",
+    "entered": "입장",
+    "exited": "퇴장",
+    "inside": "매장 내",
+    "cameras": "카메라",
+    "detections": "감지 수",
+    "staff": "직원",
+    "today": "오늘",
+    "now": "현재",
+    "active": "활성",
+    "onDuty": "근무 중",
+    "trafficFlow24h": "유동 인구 — 24시간",
+    "genderDistribution": "성별 분포",
+    "ageGroups": "연령대",
+    "realtimeTracking": "실시간 인물 추적",
+    "series": {
+      "entered": "입장",
+      "exited": "퇴장",
+      "inside": "매장 내",
+      "percent": "비율"
+    }
+  },
+  "traffic": {
+    "title": "고객 유동 분석",
+    "subtitle": "입/퇴장 흐름 및 매장 내 유동 추이",
+    "peakHour": " — 최고 혼잡 시간: {{hour}} ({{count}}명 입장)",
+    "hourlyFlowTitle": "시간별 입/퇴장 흐름",
+    "insideCountTitle": "매장 내 인원 수 (시간별)",
+    "series": {
+      "entered": "입장",
+      "exited": "퇴장",
+      "inside": "매장 내"
+    }
+  },
+  "heatmap": {
+    "title": "히트맵 — 고객 이동",
+    "subtitle": "매장에서 가장 많이 방문한 구역 (빨간색 = 높은 트래픽)",
+    "selectCamera": "카메라를 선택하세요",
+    "cameraLabel": "카메라",
+    "noData": "히트맵 데이터 없음"
+  },
+  "insights": {
+    "title": "AI 분석 — 시간 및 이동 방향",
+    "subtitle": "고객이 어디서 얼마나 머무는지, 어느 방향으로 더 많이 이동하는지",
+    "avgTimeByZone": "구역별 평균 체류 시간 (분)",
+    "movementDirections": "이동 방향",
+    "popularZones": "가장 인기 있는 구역 (24시간)",
+    "recentDwellTimes": "최근 고객 체류 시간",
+    "table": {
+      "zone": "구역",
+      "visits": "방문 수",
+      "totalTime": "총 시간 (분)",
+      "time": "시간 (초)",
+      "gender": "성별",
+      "age": "연령"
+    },
+    "series": {
+      "minutes": "분",
+      "movements": "이동 수",
+      "count": "수"
+    },
+    "directions": {
+      "north": "북", "south": "남", "east": "동", "west": "서",
+      "northeast": "북동", "northwest": "북서", "southeast": "남동", "southwest": "남서"
+    }
+  },
+  "staffMonitoring": {
+    "title": "직원 모니터링",
+    "totalStaff": "전체 직원",
+    "onDuty": "근무 중",
+    "offDuty": "휴무",
+    "staffStatusTitle": "직원 상태",
+    "recentActivityTitle": "최근 활동",
+    "table": {
+      "name": "이름",
+      "badge": "사번",
+      "department": "부서",
+      "location": "위치",
+      "status": "상태",
+      "action": "작업",
+      "staff": "직원",
+      "activity": "활동",
+      "duration": "지속 시간",
+      "time": "시간"
+    },
+    "activities": {
+      "patrol": "순찰",
+      "assisting_customer": "고객 응대",
+      "at_counter": "계산대",
+      "break": "휴식",
+      "check_in": "출근"
+    }
+  },
+  "realtimeTable": {
+    "empty": "실시간 감지 대기 중...",
+    "trackId": "추적 ID",
+    "camera": "카메라",
+    "event": "이벤트",
+    "gender": "성별",
+    "age": "연령",
+    "zone": "구역",
+    "staff": "직원",
+    "time": "시간"
+  },
+  "videoAnalysis": {
+    "title": "영상 분석",
+    "adminOnly": "이 섹션은 관리자 전용입니다.",
+    "dropzone": {
+      "title": "영상 업로드",
+      "hint": "드래그 앤 드롭 또는 클릭 — MP4, AVI, MOV, MKV (최대 500MB)"
+    },
+    "processingCount": "영상 {{count}}개 분석 중...",
+    "historyTitle": "분석 기록",
+    "status": {
+      "done": "완료",
+      "failed": "실패"
+    },
+    "startedAt": "시작",
+    "finishedAt": "종료",
+    "uploadError": "업로드 실패",
+    "results": "결과",
+    "downloadReport": "PDF / TXT 보고서 다운로드",
+    "report": "보고서",
+    "downloadVideo": "분석된 영상 다운로드",
+    "video": "영상",
+    "deleteResult": "결과 삭제",
+    "stats": {
+      "uniquePeople": "고유 인원",
+      "duration": "재생 시간",
+      "frames": "프레임 수",
+      "fps": "FPS"
+    },
+    "trafficTimeline": "시간별 유동 흐름",
+    "genderDistribution": "성별 분포",
+    "ageGroups": "연령대",
+    "movementDirections": "이동 방향",
+    "noDirectionData": "이동 방향 데이터 없음",
+    "heatmapTitle": "히트맵 (20×20 그리드)",
+    "heatmapHint": "진할수록 해당 구역에 사람이 많음",
+    "series": {
+      "people": "인원",
+      "percent": "비율",
+      "count": "수"
+    },
+    "placeholder": {
+      "processing": "영상 분석 중...",
+      "idle": "영상을 업로드하면 결과가 여기에 표시됩니다"
+    },
+    "genders": {
+      "male": "남성",
+      "female": "여성",
+      "unknown": "알 수 없음"
+    },
+    "directions": {
+      "north": "북", "south": "남", "east": "동", "west": "서",
+      "northeast": "북동", "northwest": "북서", "southeast": "남동", "southwest": "남서"
+    }
+  }
+}

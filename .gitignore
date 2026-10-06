@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+.vite/
+
+# AI Models (large binary files)
+retail/ai-service/models/
+*.pt
+*.onnx
+*.caffemodel
+*.prototxt
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Uploads & generated
+retail/backend/video_uploads/
+retail/backend/staff_photos/
+retail/backend/video_results/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Docker volumes
+postgres_data/
+
+# Temp/scratch
+deck_screenshots/
+SeevaAI_Report.pdf
+SeevaAI_Report.docx

@@ -1,0 +1,304 @@
+{
+  "app": {
+    "title": "Retail Analytics",
+    "platformTitle": "Retail Analytics Platform",
+    "tagline": "Real-time person detection and tracking system"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "traffic": "Traffic Flow",
+    "heatmap": "Heatmap",
+    "staff": "Staff Monitoring",
+    "insights": "AI Insights",
+    "cameras": "Cameras",
+    "webCamera": "Web Camera",
+    "staffCenter": "Staff Center",
+    "videoAnalysis": "Video Analysis"
+  },
+  "topbar": {
+    "live": "Live",
+    "offline": "Offline",
+    "logout": "Log out",
+    "language": "Language"
+  },
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "submit": "Log in",
+    "error": "Login failed",
+    "demo": "Demo: admin / admin123 or operator / operator123"
+  },
+  "cameras": {
+    "title": "Camera Management",
+    "hint": "Click the camera icon to watch the live annotated stream",
+    "add": "Add camera",
+    "empty": "No cameras yet. Click \"Add camera\" to get started.",
+    "name": "Name",
+    "location": "Location",
+    "ipAddress": "IP address",
+    "port": "Port",
+    "brand": "Camera brand",
+    "login": "Username",
+    "password": "Password",
+    "streamPath": "Stream path",
+    "streamPathHelper": "Example: Streaming/Channels/101 (Hikvision)",
+    "entrance": "Entrance door",
+    "active": "Active",
+    "inactive": "Inactive",
+    "cancel": "Cancel",
+    "testConnection": "Test connection",
+    "testing": "Testing...",
+    "saveAndStart": "Save & start AI",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "ip": "IP",
+      "aiStatus": "AI status",
+      "entrance": "Entrance"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "watchLive": "Watch live",
+    "turnOn": "Turn on camera",
+    "turnOff": "Turn off camera",
+    "streamLoading": "Loading stream…",
+    "frameUnavailable": "No frame available",
+    "streamOffline": "AI service or camera isn't running",
+    "refresh": "Refresh",
+    "fullscreen": "Fullscreen"
+  },
+  "webCamera": {
+    "title": "Web Camera Management",
+    "subtitle": "Use your laptop or USB webcam for real-time analytics",
+    "add": "Add web camera",
+    "addTitle": "Add a new web camera",
+    "empty": "No web camera added yet. Click \"Add web camera\" to get started.",
+    "name": "Name",
+    "namePlaceholder": "Laptop camera",
+    "location": "Location",
+    "locationPlaceholder": "Checkout counter",
+    "device": "Device",
+    "deviceHint": "Usually the laptop's built-in camera is #0",
+    "device0": "Device #0 (default / built-in)",
+    "device1": "Device #1 (external USB camera)",
+    "device2": "Device #2",
+    "entrance": "Entrance door",
+    "active": "Active",
+    "cancel": "Cancel",
+    "testConnection": "Test connection",
+    "testing": "Testing...",
+    "saveAndStart": "Save & start AI",
+    "monitor": {
+      "title": "Live People Counter",
+      "subtitle": "Confirms at a glance whether the AI pipeline is actually processing frames",
+      "peopleNow": "people detected now",
+      "customers": "Customers",
+      "staff": "Staff",
+      "status": {
+        "processing": "Working",
+        "connecting": "Connecting",
+        "error": "Error",
+        "stopped": "Stopped",
+        "idle": "Idle",
+        "pending": "Pending"
+      },
+      "lastFrame": "Last frame",
+      "justNow": "just now",
+      "secondsAgo": "{{count}}s ago",
+      "noSignal": "No signal",
+      "noCameras": "Add a web camera to see the live counter here."
+    }
+  },
+  "staffCenter": {
+    "title": "Staff Center",
+    "subtitle": "Upload staff photos and assign a work position — the AI recognizes them by face and tells staff apart from customers",
+    "add": "Add staff",
+    "addTitle": "Add a new staff member",
+    "empty": "No staff added yet. Click \"Add staff\" to get started.",
+    "name": "Full name",
+    "badgeId": "Badge ID",
+    "department": "Department",
+    "workPosition": "Work position (zone)",
+    "workPositionHint": "The AI marks the shift as started once this person is recognized inside this zone",
+    "noPosition": "Not assigned",
+    "photoHint": "After saving, upload 2-5 clear face photos from different angles/lighting on the staff card — multiple photos help the AI reliably tell apart lookalike or same-named staff.",
+    "save": "Save",
+    "onDuty": "On duty",
+    "offDuty": "Off duty",
+    "checkedInAgo": "Started shift {{time}}",
+    "secondsAgo": "{{count}}s ago",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "noPhotoWarning": "No photo — won't be recognized as staff yet",
+    "morePhotosHint": "At least {{count}} photos recommended for accuracy",
+    "addPhoto": "Add photo",
+    "uploadFailed": "Could not upload photo",
+    "departments": {
+      "sales": "Sales",
+      "security": "Security",
+      "warehouse": "Warehouse",
+      "cashier": "Cashier",
+      "management": "Management"
+    }
+  },
+  "dashboard": {
+    "title": "Real-time Analytics Dashboard",
+    "entered": "Entered",
+    "exited": "Exited",
+    "inside": "Inside",
+    "cameras": "Cameras",
+    "detections": "Detections",
+    "staff": "Staff",
+    "today": "Today",
+    "now": "Now",
+    "active": "Active",
+    "onDuty": "On duty",
+    "trafficFlow24h": "Traffic Flow — 24h",
+    "genderDistribution": "Gender distribution",
+    "ageGroups": "Age groups",
+    "realtimeTracking": "Real-time Person Tracking",
+    "series": {
+      "entered": "Entered",
+      "exited": "Exited",
+      "inside": "Inside",
+      "percent": "Percent"
+    }
+  },
+  "traffic": {
+    "title": "Customer Traffic Analysis",
+    "subtitle": "Entry/exit flow and in-store traffic dynamics",
+    "peakHour": " — busiest hour: {{hour}} ({{count}} entries)",
+    "hourlyFlowTitle": "Hourly entry/exit flow",
+    "insideCountTitle": "People inside (hourly)",
+    "series": {
+      "entered": "Entered",
+      "exited": "Exited",
+      "inside": "Inside"
+    }
+  },
+  "heatmap": {
+    "title": "Heatmap — Customer Movement",
+    "subtitle": "Most-visited zones in the store (red = high traffic)",
+    "selectCamera": "Select a camera",
+    "cameraLabel": "Camera",
+    "noData": "No heatmap data"
+  },
+  "insights": {
+    "title": "AI Insights — Time & Direction",
+    "subtitle": "How long customers spend where, and which direction they move most",
+    "avgTimeByZone": "Average time by zone (minutes)",
+    "movementDirections": "Movement directions",
+    "popularZones": "Most popular zones (24h)",
+    "recentDwellTimes": "Recent customer dwell times",
+    "table": {
+      "zone": "Zone",
+      "visits": "Visits",
+      "totalTime": "Total time (min)",
+      "time": "Time (sec)",
+      "gender": "Gender",
+      "age": "Age"
+    },
+    "series": {
+      "minutes": "Minutes",
+      "movements": "Movements",
+      "count": "Count"
+    },
+    "directions": {
+      "north": "North", "south": "South", "east": "East", "west": "West",
+      "northeast": "NE", "northwest": "NW", "southeast": "SE", "southwest": "SW"
+    }
+  },
+  "staffMonitoring": {
+    "title": "Staff Monitoring",
+    "totalStaff": "Total staff",
+    "onDuty": "On duty",
+    "offDuty": "Off duty",
+    "staffStatusTitle": "Staff status",
+    "recentActivityTitle": "Recent activity",
+    "table": {
+      "name": "Name",
+      "badge": "Badge",
+      "department": "Department",
+      "location": "Location",
+      "status": "Status",
+      "action": "Action",
+      "staff": "Staff",
+      "activity": "Activity",
+      "duration": "Duration",
+      "time": "Time"
+    },
+    "activities": {
+      "patrol": "Patrol",
+      "assisting_customer": "Assisting customer",
+      "at_counter": "At counter",
+      "break": "Break",
+      "check_in": "Checked in"
+    }
+  },
+  "realtimeTable": {
+    "empty": "Waiting for real-time detections...",
+    "trackId": "Track ID",
+    "camera": "Camera",
+    "event": "Event",
+    "gender": "Gender",
+    "age": "Age",
+    "zone": "Zone",
+    "staff": "Staff",
+    "time": "Time"
+  },
+  "videoAnalysis": {
+    "title": "Video Analysis",
+    "adminOnly": "This section is admin-only.",
+    "dropzone": {
+      "title": "Upload a video",
+      "hint": "Drag & drop or click — MP4, AVI, MOV, MKV (max 500 MB)"
+    },
+    "processingCount": "{{count}} video(s) processing...",
+    "historyTitle": "Analysis history",
+    "status": {
+      "done": "Done",
+      "failed": "Failed"
+    },
+    "startedAt": "Started",
+    "finishedAt": "Finished",
+    "uploadError": "Upload failed",
+    "results": "Results",
+    "downloadReport": "Download PDF / TXT report",
+    "report": "Report",
+    "downloadVideo": "Download annotated video",
+    "video": "Video",
+    "deleteResult": "Delete result",
+    "stats": {
+      "uniquePeople": "Unique people",
+      "duration": "Duration",
+      "frames": "Frames",
+      "fps": "FPS"
+    },
+    "trafficTimeline": "Traffic flow (over time)",
+    "genderDistribution": "Gender distribution",
+    "ageGroups": "Age groups",
+    "movementDirections": "Movement directions",
+    "noDirectionData": "No direction data",
+    "heatmapTitle": "Heatmap (20×20 grid)",
+    "heatmapHint": "Darker = more people in that zone",
+    "series": {
+      "people": "People",
+      "percent": "Percent",
+      "count": "Count"
+    },
+    "placeholder": {
+      "processing": "Analyzing video...",
+      "idle": "Upload a video — results will appear here"
+    },
+    "genders": {
+      "male": "Male",
+      "female": "Female",
+      "unknown": "Unknown"
+    },
+    "directions": {
+      "north": "North", "south": "South", "east": "East", "west": "West",
+      "northeast": "NE", "northwest": "NW", "southeast": "SE", "southwest": "SW"
+    }
+  }
+}

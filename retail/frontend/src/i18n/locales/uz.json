@@ -1,0 +1,304 @@
+{
+  "app": {
+    "title": "Retail Analytics",
+    "platformTitle": "Retail Analytics Platform",
+    "tagline": "Real-time odam aniqlash va tracking tizimi"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "traffic": "Traffic Flow",
+    "heatmap": "Heatmap",
+    "staff": "Staff Monitoring",
+    "insights": "AI Tahlil",
+    "cameras": "Kameralar",
+    "webCamera": "Web kamera",
+    "staffCenter": "Xodimlar markazi",
+    "videoAnalysis": "Video Tahlil"
+  },
+  "topbar": {
+    "live": "Live",
+    "offline": "Offline",
+    "logout": "Chiqish",
+    "language": "Til"
+  },
+  "login": {
+    "username": "Login",
+    "password": "Parol",
+    "submit": "Kirish",
+    "error": "Login xatoligi",
+    "demo": "Demo: admin / admin123 yoki operator / operator123"
+  },
+  "cameras": {
+    "title": "Kameralar boshqaruvi",
+    "hint": "📹 ikonkasiga bosib live annotated streamni ko'ring",
+    "add": "Kamera qo'shish",
+    "empty": "Hozircha kamera yo'q. \"Kamera qo'shish\" tugmasini bosing.",
+    "name": "Nomi",
+    "location": "Joylashuv",
+    "ipAddress": "IP manzil",
+    "port": "Port",
+    "brand": "Kamera turi",
+    "login": "Login",
+    "password": "Parol",
+    "streamPath": "Stream yo'li",
+    "streamPathHelper": "Masalan: Streaming/Channels/101 (Hikvision)",
+    "entrance": "Kirish eshigi",
+    "active": "Faol",
+    "inactive": "Nofaol",
+    "cancel": "Bekor",
+    "testConnection": "Ulanishni tekshirish",
+    "testing": "Tekshirilmoqda...",
+    "saveAndStart": "Saqlash va AI ishga tushirish",
+    "table": {
+      "id": "ID",
+      "name": "Nomi",
+      "ip": "IP",
+      "aiStatus": "AI holati",
+      "entrance": "Kirish"
+    },
+    "yes": "Ha",
+    "no": "Yo'q",
+    "close": "Yopish",
+    "watchLive": "Live ko'rish",
+    "turnOn": "Kamerani yoqish",
+    "turnOff": "Kamerani o'chirish",
+    "streamLoading": "Stream yuklanmoqda…",
+    "frameUnavailable": "Frame mavjud emas",
+    "streamOffline": "AI servisi yoki kamera ishlamayyapti",
+    "refresh": "Yangilash",
+    "fullscreen": "To'liq ekran"
+  },
+  "webCamera": {
+    "title": "Web kamera boshqaruvi",
+    "subtitle": "Noutbuk yoki USB webkameradan foydalanib real-time tahlil qiling",
+    "add": "Web kamera qo'shish",
+    "addTitle": "Yangi web kamera qo'shish",
+    "empty": "Hozircha web kamera qo'shilmagan. \"Web kamera qo'shish\" tugmasini bosing.",
+    "name": "Nomi",
+    "namePlaceholder": "Noutbuk kamerasi",
+    "location": "Joylashuv",
+    "locationPlaceholder": "Kassa oldi",
+    "device": "Qurilma",
+    "deviceHint": "Odatda noutbukning o'rnatilgan kamerasi — 0",
+    "device0": "Qurilma #0 (asosiy / o'rnatilgan)",
+    "device1": "Qurilma #1 (tashqi USB kamera)",
+    "device2": "Qurilma #2",
+    "entrance": "Kirish eshigi",
+    "active": "Faol",
+    "cancel": "Bekor",
+    "testConnection": "Ulanishni tekshirish",
+    "testing": "Tekshirilmoqda...",
+    "saveAndStart": "Saqlash va AI ishga tushirish",
+    "monitor": {
+      "title": "Real-time odamlar hisoblagichi",
+      "subtitle": "AI aslida frame larni qayta ishlayotganini bir qarashda bilib oling",
+      "peopleNow": "kishi hozir aniqlandi",
+      "customers": "Mijozlar",
+      "staff": "Xodimlar",
+      "status": {
+        "processing": "Ishlamoqda",
+        "connecting": "Ulanmoqda",
+        "error": "Xato",
+        "stopped": "To'xtatilgan",
+        "idle": "Kutilmoqda",
+        "pending": "Kutilmoqda"
+      },
+      "lastFrame": "Oxirgi frame",
+      "justNow": "hozirgina",
+      "secondsAgo": "{{count}} soniya oldin",
+      "noSignal": "Signal yo'q",
+      "noCameras": "Real-time hisoblagichni ko'rish uchun web kamera qo'shing."
+    }
+  },
+  "staffCenter": {
+    "title": "Xodimlar markazi",
+    "subtitle": "Xodim rasmini yuklang va ish o'rnini belgilang — AI uni yuzidan tanib, mijozdan ajratadi",
+    "add": "Xodim qo'shish",
+    "addTitle": "Yangi xodim qo'shish",
+    "empty": "Hozircha xodim qo'shilmagan. \"Xodim qo'shish\" tugmasini bosing.",
+    "name": "To'liq ism",
+    "badgeId": "Badge ID",
+    "department": "Bo'lim",
+    "workPosition": "Ish o'rni (zona)",
+    "workPositionHint": "Bu odam ushbu zonada tanilganda, AI uning ish smenasi boshlanganini belgilaydi",
+    "noPosition": "Belgilanmagan",
+    "photoHint": "Saqlagandan so'ng, xodim kartochkasida 2-5 ta aniq, turli burchak/yorug'likda olingan yuz rasmini yuklang — bir nechta rasm AI'ga o'xshash yoki bir xil ismli xodimlarni ham aniq ajratishga yordam beradi.",
+    "save": "Saqlash",
+    "onDuty": "Navbatchi",
+    "offDuty": "Off",
+    "checkedInAgo": "Smena boshlandi: {{time}}",
+    "secondsAgo": "{{count}} soniya oldin",
+    "minutesAgo": "{{count}} daqiqa oldin",
+    "hoursAgo": "{{count}} soat oldin",
+    "noPhotoWarning": "Rasm yo'q — hali xodim sifatida tanilmaydi",
+    "morePhotosHint": "Aniqlik uchun kamida {{count}} ta rasm tavsiya etiladi",
+    "addPhoto": "Rasm qo'shish",
+    "uploadFailed": "Rasm yuklab bo'lmadi",
+    "departments": {
+      "sales": "Savdo",
+      "security": "Xavfsizlik",
+      "warehouse": "Ombor",
+      "cashier": "Kassir",
+      "management": "Boshqaruv"
+    }
+  },
+  "dashboard": {
+    "title": "Real-time Analytics Dashboard",
+    "entered": "Kirganlar",
+    "exited": "Chiqganlar",
+    "inside": "Ichkarida",
+    "cameras": "Kameralar",
+    "detections": "Detectionlar",
+    "staff": "Xodimlar",
+    "today": "Bugun",
+    "now": "Hozir",
+    "active": "Faol",
+    "onDuty": "Navbatchi",
+    "trafficFlow24h": "Traffic Flow — 24 soat",
+    "genderDistribution": "Jins taqsimoti",
+    "ageGroups": "Yosh guruhlari",
+    "realtimeTracking": "Real-time Person Tracking",
+    "series": {
+      "entered": "Kirgan",
+      "exited": "Chiqgan",
+      "inside": "Ichkarida",
+      "percent": "Foiz"
+    }
+  },
+  "traffic": {
+    "title": "Mijoz Harakatlanish Tahlili",
+    "subtitle": "Kiruvchi/chiquvchi oqim va do'kon ichidagi trafik dinamikasi",
+    "peakHour": " — eng faol soat: {{hour}} ({{count}} kirish)",
+    "hourlyFlowTitle": "Soatlik kirish/chiqish oqimi",
+    "insideCountTitle": "Ichkaridagi odamlar soni (soatlik)",
+    "series": {
+      "entered": "Kirgan",
+      "exited": "Chiqgan",
+      "inside": "Ichkarida"
+    }
+  },
+  "heatmap": {
+    "title": "Heatmap — Mijoz harakati",
+    "subtitle": "Do'kon ichidagi eng ko'p tashrif buyurilgan zonalar (qizil = yuqori trafik)",
+    "selectCamera": "Kamera tanlang",
+    "cameraLabel": "Kamera",
+    "noData": "Heatmap ma'lumotlari yo'q"
+  },
+  "insights": {
+    "title": "AI Tahlil — Vaqt va Yo'nalish",
+    "subtitle": "Mijozlar qayerda qancha vaqt turgani va qaysi yo'nalishda ko'proq harakatlanishi",
+    "avgTimeByZone": "Zona bo'yicha o'rtacha vaqt (daqiqa)",
+    "movementDirections": "Harakat yo'nalishlari",
+    "popularZones": "Eng mashhur zonalar (24 soat)",
+    "recentDwellTimes": "So'nggi mijozlar vaqti",
+    "table": {
+      "zone": "Zona",
+      "visits": "Tashriflar",
+      "totalTime": "Jami vaqt (min)",
+      "time": "Vaqt (sek)",
+      "gender": "Jins",
+      "age": "Yosh"
+    },
+    "series": {
+      "minutes": "Daqiqa",
+      "movements": "Harakatlar",
+      "count": "Son"
+    },
+    "directions": {
+      "north": "Shimol", "south": "Janub", "east": "Sharq", "west": "G'arb",
+      "northeast": "Shimoli-sharq", "northwest": "Shimoli-g'arb", "southeast": "Janubi-sharq", "southwest": "Janubi-g'arb"
+    }
+  },
+  "staffMonitoring": {
+    "title": "Xodim Nazorati",
+    "totalStaff": "Jami xodimlar",
+    "onDuty": "Navbatchi",
+    "offDuty": "Dam olishda",
+    "staffStatusTitle": "Xodimlar holati",
+    "recentActivityTitle": "So'nggi faoliyat",
+    "table": {
+      "name": "Ism",
+      "badge": "Badge",
+      "department": "Bo'lim",
+      "location": "Joylashuv",
+      "status": "Holat",
+      "action": "Amal",
+      "staff": "Xodim",
+      "activity": "Faoliyat",
+      "duration": "Davomiylik",
+      "time": "Vaqt"
+    },
+    "activities": {
+      "patrol": "Patrul",
+      "assisting_customer": "Mijozga yordam",
+      "at_counter": "Kassada",
+      "break": "Tanaffus",
+      "check_in": "Ish boshladi"
+    }
+  },
+  "realtimeTable": {
+    "empty": "Real-time detectionlar kutilmoqda...",
+    "trackId": "Track ID",
+    "camera": "Kamera",
+    "event": "Event",
+    "gender": "Jins",
+    "age": "Yosh",
+    "zone": "Zona",
+    "staff": "Xodim",
+    "time": "Vaqt"
+  },
+  "videoAnalysis": {
+    "title": "Video Tahlil",
+    "adminOnly": "Bu bo'lim faqat adminlar uchun.",
+    "dropzone": {
+      "title": "Video yuklang",
+      "hint": "Sudrab tashlang yoki tanlang — MP4, AVI, MOV, MKV (maks 500 MB)"
+    },
+    "processingCount": "{{count}} ta video tahlil qilinmoqda...",
+    "historyTitle": "Tahlil tarixi",
+    "status": {
+      "done": "Tayyor",
+      "failed": "Xato"
+    },
+    "startedAt": "Boshlangan",
+    "finishedAt": "Tugagan",
+    "uploadError": "Yuklashda xatolik",
+    "results": "Natijalar",
+    "downloadReport": "PDF / TXT hisobot yuklab olish",
+    "report": "Hisobot",
+    "downloadVideo": "Annotated video yuklab olish",
+    "video": "Video",
+    "deleteResult": "Natijani o'chirish",
+    "stats": {
+      "uniquePeople": "Noyob odamlar",
+      "duration": "Davomiylik",
+      "frames": "Kadrlar",
+      "fps": "FPS"
+    },
+    "trafficTimeline": "Trafik oqimi (vaqt bo'yicha)",
+    "genderDistribution": "Jins taqsimoti",
+    "ageGroups": "Yosh guruhlari",
+    "movementDirections": "Harakat yo'nalishlari",
+    "noDirectionData": "Yo'nalish ma'lumoti yo'q",
+    "heatmapTitle": "Issiqlik xaritasi (20×20 grid)",
+    "heatmapHint": "Quyuqroq = ko'proq odamlar bo'lgan zona",
+    "series": {
+      "people": "Odamlar",
+      "percent": "Foiz",
+      "count": "Son"
+    },
+    "placeholder": {
+      "processing": "Video tahlil qilinmoqda...",
+      "idle": "Video yuklang — natijalar shu yerda ko'rinadi"
+    },
+    "genders": {
+      "male": "Erkak",
+      "female": "Ayol",
+      "unknown": "Noma'lum"
+    },
+    "directions": {
+      "north": "Shimol", "south": "Janub", "east": "Sharq", "west": "G'arb",
+      "northeast": "Sh-Sharq", "northwest": "Sh-G'arb", "southeast": "J-Sharq", "southwest": "J-G'arb"
+    }
+  }
+}
