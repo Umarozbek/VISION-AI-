@@ -77,3 +77,28 @@ FastAPI Backend → PostgreSQL
       ▼
 React Dashboard (MUI + Redux)
 ```
+
+ 
+
+## Project Creators
+
+This Retail Analytics Platform was developed by:
+
+### 1. GAFFOROV SUNNATBEK GAFUROVICH
+**Responsibilities:**
+- Backend Development
+- Dashboard Frontend Development
+- AI Development and Integration
+- Computer Vision and People Analytics
+- Camera Integration and Tracking Systems
+
+### 2. AZAMJONOV MUKHAMMADALI AKMALJON UGLI
+**Responsibilities:**
+- Project Development and Implementation
+
+---
+
+**Project:** Retail Analytics Platform  
+**Technologies:** FastAPI, Python, React, MUI, Redux, PostgreSQL, OpenCV, YOLOv8, ByteTrack, Docker, RTSP
+
+
