@@ -1,75 +1,75 @@
 # Retail Analytics Platform
 
-Haqiqiy IP kameralar bilan ishlaydigan retail analytics tizimi.
+A retail analytics system that works with real IP cameras.
 
-## Imkoniyatlar
+## Features
 
-- **RTSP kamera** — IP, login, parol orqali ulanish (Hikvision, Dahua, Uniview)
-- **YOLOv8n** — bepul person detection va tracking
-- **Kirish/chiqish sanash** — kirish eshigi kamerasida chiziq kesish
-- **Yosh va jins** — OpenCV DNN modellari (bepul)
-- **Xodim aniqlash** — uniforma rangi bo'yicha (ko'k forma)
-- **Dwell time** — qaysi zonada qancha vaqt turgani
-- **Yo'nalish tahlili** — qaysi tomonga ko'proq harakat
-- **Heatmap** — real-time zona trafik xaritasi
+- **RTSP Camera Integration** — Connect using an IP address, username, and password (Hikvision, Dahua, Uniview).
+- **YOLOv8n** — Free person detection and tracking.
+- **Entry/Exit Counting** — Count people crossing a line at the entrance.
+- **Age and Gender Estimation** — Free OpenCV DNN models.
+- **Staff Detection** — Identify staff based on uniform color (blue uniforms).
+- **Dwell Time Analysis** — Measure how long people stay in specific zones.
+- **Movement Direction Analysis** — Analyze the most common movement directions.
+- **Heatmap** — Real-time visualization of traffic across different zones.
 
-## Ishga tushirish
+## Getting Started
 
 ```bash
 docker compose up --build
 ```
 
-| Xizmat | Manzil |
-|--------|--------|
+| Service | URL |
+|---------|-----|
 | Dashboard | http://localhost:5173 |
-| API Docs | http://localhost:8000/docs |
+| API Documentation | http://localhost:8000/docs |
 
 **Login:** `admin` / `admin123`
 
-## Kamera qo'shish
+## Adding a Camera
 
-1. Dashboard → **Cameras** → **Kamera qo'shish**
-2. Maydonlarni to'ldiring:
-   - **IP manzil** — masalan `192.168.1.64`
-   - **Login / Parol** — kamera admin ma'lumotlari
-   - **Kamera turi** — Hikvision, Dahua yoki Boshqa
-3. **Ulanishni tekshirish** tugmasini bosing
-4. **Saqlash** — AI service 10 soniya ichida avtomatik ulanadi
+1. Go to Dashboard → **Cameras** → **Add Camera**.
+2. Fill in the required fields:
+   - **IP Address** — For example, `192.168.1.64`
+   - **Username / Password** — Camera administrator credentials
+   - **Camera Type** — Hikvision, Dahua, or Other
+3. Click **Test Connection**.
+4. Click **Save** — The AI service will automatically connect within 10 seconds.
 
-### RTSP yo'llari (standart)
+### Default RTSP Stream Paths
 
-| Brend | Stream yo'li |
+| Brand | Stream Path |
 |-------|-------------|
 | Hikvision | `Streaming/Channels/101` |
 | Dahua | `cam/realmonitor?channel=1&subtype=0` |
 | Uniview | `media/video1` |
 
-### Kirish eshigi kamerasi
+### Entrance Camera
 
-"Kirish eshigi" switchini yoqing — AI kirgan/chiqgan odamlarni sanaydi va yosh/jins/staff aniqlaydi.
+Enable the **Entrance Camera** switch. The AI system will count people entering and exiting and perform age, gender, and staff analysis.
 
-## AI modellari (bepul)
+## Free AI Models
 
-| Model | Vazifa |
-|-------|--------|
-| YOLOv8n | Odamlarni aniqlash va tracking |
-| OpenCV Age/Gender Net | Yosh va jins tahlili |
-| ByteTrack (Ultralytics) | Track ID saqlash |
+| Model | Purpose |
+|-------|---------|
+| YOLOv8n | Person detection and tracking |
+| OpenCV Age/Gender Net | Age and gender estimation |
+| ByteTrack (Ultralytics) | Maintaining tracking IDs |
 
-## Muhim eslatmalar
+## Important Notes
 
-- Kamera va server **bir xil tarmoqda** bo'lishi kerak
-- Docker ichidan kameraga ulanish uchun kamera IP to'g'ri bo'lishi kerak
-- Birinchi ishga tushirishda YOLO modeli yuklanadi (~6 MB)
-- AI service holati kameralar kartasida ko'rinadi: `processing`, `connecting`, `error`
+- The camera and server must be on the **same network**.
+- The camera IP address must be correct for the Docker container to connect to it.
+- The YOLO model is downloaded on the first launch (approximately 6 MB).
+- The AI service status is displayed on camera cards: `processing`, `connecting`, `error`.
 
-## Arxitektura
+## Architecture
 
-```
+```text
 IP Camera (RTSP)
       │
       ▼
-AI Service (YOLOv8 + tracking)
+AI Service (YOLOv8 + Tracking)
       │ POST /analytics/events
       ▼
 FastAPI Backend → PostgreSQL
@@ -78,13 +78,12 @@ FastAPI Backend → PostgreSQL
 React Dashboard (MUI + Redux)
 ```
 
- 
-
 ## Project Creators
 
 This Retail Analytics Platform was developed by:
 
 ### 1. GAFFOROV SUNNATBEK GAFUROVICH
+
 **Responsibilities:**
 - Backend Development
 - Dashboard Frontend Development
@@ -93,6 +92,7 @@ This Retail Analytics Platform was developed by:
 - Camera Integration and Tracking Systems
 
 ### 2. AZAMJONOV MUKHAMMADALI AKMALJON UGLI
+
 **Responsibilities:**
 - Project Development and Implementation
 
@@ -100,5 +100,3 @@ This Retail Analytics Platform was developed by:
 
 **Project:** Retail Analytics Platform  
 **Technologies:** FastAPI, Python, React, MUI, Redux, PostgreSQL, OpenCV, YOLOv8, ByteTrack, Docker, RTSP
-
-
